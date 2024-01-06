@@ -1,0 +1,22 @@
+declare-->integer-->age
+declare-->string-->drivingLicense,universityGraduates
+output-->"Enter your age:"
+input-->age
+with IF command;
+age>40
+output--->"Sorry,you are not hired"
+age<40
+output-->"Do you have a university degree? Y/N"
+input--->universityGraduates
+output--->"Do you have a driving licence? Y/N"
+input---->drivingLicence
+         |
+
+         |
+      
+  with IF command;
+drivingLicence=="Y" && universityGraduates=="Y"
+if true;       
+output-->"you are hired"
+if false;
+output--->"you are not hired"

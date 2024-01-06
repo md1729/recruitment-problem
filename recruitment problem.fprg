@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="muhammed"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-07 01:38:47 AM"/>
+        <attribute name="created" value="bXVoYW1tZWQ7REVMTDsyMDI0LTAxLTA2OzEwOjEwOjAxIFBNOzIzOTc="/>
+        <attribute name="edited" value="bXVoYW1tZWQ7REVMTDsyMDI0LTAxLTA3OzAxOjM4OjQ3IEFNOzE7MjUxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <declare name="drivingLicence, universityGraduates" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your age:&quot;" newline="True"/>
+            <input variable="age"/>
+            <if expression="age&gt;40">
+                <then>
+                    <output expression="&quot;Sorry,you are not hired&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Do you have a university degree? Y/N&quot;" newline="True"/>
+                    <input variable="universityGraduates"/>
+                    <output expression="&quot;Do you have a driving license? Y/N&quot;" newline="True"/>
+                    <input variable="drivingLicence"/>
+                    <if expression="drivingLicence==&quot;Y&quot; &amp;&amp; universityGraduates==&quot;Y&quot;">
+                        <then>
+                            <output expression="&quot;You are hired&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;You are not hired&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
